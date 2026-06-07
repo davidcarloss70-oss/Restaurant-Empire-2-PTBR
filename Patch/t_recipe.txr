@@ -1,0 +1,59 @@
+54
+50
+FDMENUIN|7
+RECIPEIN|29
+BEVERIN|5
+SUPPLIN|6
+RECRSHRP|2
+RECIPE|1
+#
+1|FDMENUIN|1|Tem certeza de que deseja excluir o prato selecionado?
+2|FDMENUIN|2|O cardápio de comida do restaurante selecionado será importado para o cardápio de comida do restaurante atual. Tem certeza?
+3|FDMENUIN|3|Agora com um desconto de %1d%%.
+4|RECIPEIN|1|Tem certeza de que deseja excluir a receita atual?
+5|RECIPEIN|2|Uma duplicata da receita foi criada. É chamado %1s.
+6|RECIPEIN|3|CUSTO:
+7|RECIPEIN|4|AVALIAÇÃO:
+8|RECIPEIN|5|POPULARIDADE:
+9|RECIPEIN|6|CLASSIFICAÇÃO:
+10|RECIPEIN|7|PREÇO PADRÃO
+11|RECIPEIN|8|N / D
+12|RECIPEIN|9|NIL
+13|RECIPEIN|10|A sua cozinha não está devidamente equipada para esta receita. Adicione as instalações de cozinha necessárias antes de incluir a receita em seu menu.
+14|RECIPEIN|11|O número de %1s no menu de comida atingiu o limite. A receita não será adicionada. Remova uma ou duas receitas antes de tentar novamente.
+15|RECIPEIN|12|Custo total do ingrediente: $%1f
+16|RECIPEIN|13|Preço de tabela total: $%1f
+19|BEVERIN|1|O número de bebidas que você selecionou é maior que o número máximo de bebidas permitidas em um menu de comida. Selecione novamente, mas desta vez com menos bebidas!
+20|BEVERIN|2|A venda de bebidas alcoólicas exige que você pague para obter uma licença para comercializar bebidas alcoólicas, que custa US$%1f. Você quer sua licença para bebidas alcoólicas agora?
+22|FDMENUIN|4|Definir almoço
+23|FDMENUIN|5|Definir jantar
+24|RECIPEIN|14|O número de %1s em %2j{definir o almoço|preparar o jantar} atingiu o limite. A receita não será adicionada. Remova uma ou duas receitas antes de tentar novamente.
+25|RECIPEIN|15|O curso de alimentação já está em %1j{definir o almoço|preparar o jantar}.
+26|FDMENUIN|6|P.%1d/%2d
+27|RECIPEIN|16|Os pequenos-almoços não podem ser incluídos no seu plano de refeições definido.
+28|RECIPEIN|17|Tipo de cozinha
+29|FDMENUIN|7|ALIMENTAÇÃO
+30|RECIPEIN|18|%1s é adicionado ao seu menu de comida.
+31|RECIPEIN|19|%1s já foi adicionado ao seu menu de comida.
+32|RECIPEIN|20|TEMPO DE COZIMENTO:
+33|RECIPEIN|21|REQUER:
+34|RECIPEIN|22|RECEITAS
+35|RECIPEIN|23|INGREDIENTES ESSENCIAIS
+36|RECIPEIN|24|INGREDIENTES OPCIONAIS
+37|RECIPEIN|25|Quantidade
+38|RECIPEIN|26|Custo
+39|RECIPEIN|27|Qualidade
+40|SUPPLIN|1|LISTA DE FORNECEDORES ESPECIAIS
+41|SUPPLIN|2|FORNECEDOR
+42|SUPPLIN|3|INGREDIENTE
+43|SUPPLIN|4|QUALIDADE
+44|SUPPLIN|5|PREÇO
+45|SUPPLIN|6|COMPRAR
+46|BEVERIN|3|LISTA DE BEBIDAS
+47|BEVERIN|4|BEBIDA FRIA
+48|BEVERIN|5|BEBIDA QUENTE
+49|RECIPEIN|28|%1s é adicionado a %2j{definir o almoço|preparar o jantar}.
+51|RECIPEIN|29|Tem certeza de que deseja criar uma duplicata desta receita?
+52|RECRSHRP|1|Parabéns, sua pesquisa deu resultados. Agora você tem uma nova receita!
+53|RECRSHRP|2|Parabéns, sua pesquisa deu resultados. Você é recompensado com uma receita definitiva!
+54|RECIPE|1|Delia Wellington

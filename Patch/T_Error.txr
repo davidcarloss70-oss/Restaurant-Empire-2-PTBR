@@ -1,0 +1,21 @@
+14
+14
+OPENAL|4
+DMUSIC|4
+GAMEFILE|5
+TUTORIAL|1
+#
+1|OPENAL|1|Ocorreu um erro ao inicializar o mecanismo OpenAL (%1s).
+2|OPENAL|2|O dispositivo de áudio pode estar sendo usado por outro aplicativo.
+3|OPENAL|3|
+4|OPENAL|4|Você quer continuar?
+5|DMUSIC|1|Ocorreu um erro ao inicializar o mecanismo DirectMusic.
+6|DMUSIC|2|O dispositivo de áudio pode estar sendo usado por outro aplicativo.
+7|DMUSIC|3|
+8|DMUSIC|4|Você quer continuar?
+9|GAMEFILE|1|Ocorreu um erro ao carregar o arquivo.
+10|GAMEFILE|2|Ocorreu um erro ao salvar o arquivo.
+11|GAMEFILE|3|Ocorreu um erro ao criar o arquivo.
+12|GAMEFILE|4|Ocorreu um erro ao abrir o arquivo.
+13|GAMEFILE|5|Formato de arquivo inválido.
+14|TUTORIAL|1|O texto do tutorial para esta etapa não pode ser totalmente exibido na janela do tutorial.

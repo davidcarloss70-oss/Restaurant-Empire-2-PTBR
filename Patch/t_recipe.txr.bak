@@ -1,0 +1,59 @@
+54
+50
+FDMENUIN|7
+RECIPEIN|29
+BEVERIN|5
+SUPPLIN|6
+RECRSHRP|2
+RECIPE|1
+#
+1|FDMENUIN|1|Are you sure you want to delete the selected food course?
+2|FDMENUIN|2|The food menu of the selected restaurant will be imported to the current restaurant's food menu. Are you sure?
+3|FDMENUIN|3|Now with a %1d%% discount.
+4|RECIPEIN|1|Are you sure you want to delete the current recipe?
+5|RECIPEIN|2|A duplicate of the recipe has been created. It is called %1s.
+6|RECIPEIN|3|COST:
+7|RECIPEIN|4|RATING:
+8|RECIPEIN|5|POPULARITY:
+9|RECIPEIN|6|RANK:
+10|RECIPEIN|7|DEFAULT PRICE
+11|RECIPEIN|8|N/A
+12|RECIPEIN|9|NIL
+13|RECIPEIN|10|Your kitchen is not properly equipped for this recipe. Please add the required kitchen facility before including the recipe in your menu.
+14|RECIPEIN|11|The number of %1s in the food menu has reached its limit. The recipe will not be added. Remove a recipe or two before you try again.
+15|RECIPEIN|12|Total Ingredient Cost: $%1f
+16|RECIPEIN|13|Total List Price: $%1f
+19|BEVERIN|1|The number of beverages you selected is more than the maximum number of beverages allowed in a food menu. Please select again, but this time with fewer beverages!
+20|BEVERIN|2|Selling alcoholic beverages require you to pay to obtain a liquor license, which cost $%1f. Do you want your alcohol license now?
+22|FDMENUIN|4|Set Lunch
+23|FDMENUIN|5|Set Dinner
+24|RECIPEIN|14|The number of %1s in %2j{set lunch|set dinner} has reached its limit. The recipe will not be added. Remove a recipe or two before you try again.
+25|RECIPEIN|15|The food course is already in %1j{set lunch|set dinner}.
+26|FDMENUIN|6|P. %1d/%2d
+27|RECIPEIN|16|Breakfasts cannot be included in your set meal plan.
+28|RECIPEIN|17|Cuisine Type
+29|FDMENUIN|7|FOODMENU
+30|RECIPEIN|18|%1s is added to your food menu.
+31|RECIPEIN|19|%1s is already added to your food menu.
+32|RECIPEIN|20|COOKING TIME:
+33|RECIPEIN|21|REQUIRES:
+34|RECIPEIN|22|RECIPES
+35|RECIPEIN|23|ESSENTIAL INGREDIENTS
+36|RECIPEIN|24|OPTIONAL INGREDIENTS
+37|RECIPEIN|25|Quantity
+38|RECIPEIN|26|Cost
+39|RECIPEIN|27|Quality
+40|SUPPLIN|1|SPECIAL SUPPLIER LIST
+41|SUPPLIN|2|SUPPLIER
+42|SUPPLIN|3|INGREDIENT
+43|SUPPLIN|4|QUALITY
+44|SUPPLIN|5|PRICE
+45|SUPPLIN|6|PURCHASE
+46|BEVERIN|3|BEVERAGE LIST
+47|BEVERIN|4|COLD BEVERAGE
+48|BEVERIN|5|HOT BEVERAGE
+49|RECIPEIN|28|%1s is added to %2j{set lunch|set dinner}.
+51|RECIPEIN|29|Are you sure you want to create a duplicate of this recipe?
+52|RECRSHRP|1|Congratulations, your research has yielded result. You now have a new recipe!
+53|RECRSHRP|2|Congratulations, your research has yielded result. You are rewarded with an ultimate recipe!
+54|RECIPE|1|Delia Wellington

@@ -1,0 +1,56 @@
+50
+50
+EXHELP|14
+BDHELP|6
+INTHELP|30
+#
+1|EXHELP|1|Required Rating
+2|EXHELP|2|You can only add this upgrade when the restaurant's overall rating reaches the minimum required rating.
+3|EXHELP|3|Exterior Upgrade Rating
+4|EXHELP|4|Shows the selected item's rating.
+5|EXHELP|5|Exterior Upgrade Price
+6|EXHELP|6|Shows the selected item's cost.
+7|EXHELP|7|Exterior Upgrade Monthly Maintenance Cost
+8|EXHELP|8|Shows the selected item's monthly maintenance cost.
+9|EXHELP|9|Exterior Upgrade Name
+10|EXHELP|10|This is the selected item's name.
+11|BDHELP|1|Location
+12|BDHELP|2|Indicates the location of the selected building or plot of land.
+13|BDHELP|3|Size
+14|BDHELP|4|Indicates the dimensions of the selected building or plot of land.
+15|BDHELP|5|Price
+16|BDHELP|6|Indicates the relative initial cost of purchase of the selected building or plot of land.
+17|INTHELP|1|Kitchen Appliances & Facilities
+18|INTHELP|2|Left-click to add appliances and facilities to your kitchen.
+19|INTHELP|3|Change Kitchen Wall Design
+20|INTHELP|4|Left-click to change your kitchen's wall design.
+21|INTHELP|5|Change Kitchen Floor Pattern
+22|INTHELP|6|Left-click to change your kitchen's floor pattern.
+23|INTHELP|7|Men's Restroom Facilities
+24|INTHELP|8|Left-click to add facilities to the men's restroom.
+25|INTHELP|9|Change Men's Restroom's Wall Design
+26|INTHELP|10|Left-click to change the men's restroom's wall design.
+27|INTHELP|11|Change Men's Restroom's Floor Pattern
+28|INTHELP|12|Left-click to change the men's restroom's floor pattern.
+29|INTHELP|13|Women's Restroom Facilities
+30|INTHELP|14|Left-click to change the women's restroom's wall design and floor pattern.
+31|INTHELP|15|Change Women's Restroom's Wall Design
+32|INTHELP|16|Left-click to change the women's restroom's wall design.
+33|INTHELP|17|Change Women's Restroom's Floor Pattern
+34|INTHELP|18|Left-click to change the women's restroom's floor pattern.
+35|INTHELP|19|Left-click to add item.
+36|INTHELP|20|Left-click here to add this room to your restaurant.
+37|INTHELP|21|Left-click to apply this texture to the wall of the current room.
+38|INTHELP|22|Left-click to apply this texture to the floor of the current room.
+39|INTHELP|23|Men's Restroom Textures
+40|INTHELP|24|Left-click to change the men's restroom's wall design and floor pattern.
+41|INTHELP|25|Women's Restroom Textures
+42|INTHELP|26|Left-click to change the women's restroom's wall design and floor pattern.
+43|INTHELP|27|Kitchen Textures
+44|INTHELP|28|Left-click to change your kitchen's wall design and floor pattern.
+45|EXHELP|11|%1s Checkbox
+46|EXHELP|12|Left-click on the checkbox to add the %1s upgrade to the selected restaurant.
+47|EXHELP|13|You already have this upgrade.
+48|EXHELP|14|Your restaurant needs to improve its ratings in order to add this upgrade.
+49|INTHELP|29|Counter Appliances & Facilities
+50|INTHELP|30|Left-click to add appliances and facilities to your counter.
