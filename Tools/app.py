@@ -6,17 +6,23 @@ import threading
 import sys
 import io
 import zipfile
-import subprocess
 from tkinter import filedialog, messagebox
 
-# Add tools directory to path
-sys.path.append(os.path.dirname(os.path.abspath(__file__)))
+# ── BASE_DIR: sempre aponta para a pasta do .exe (ou do script .py) ──────────
+# Quando compilado pelo PyInstaller, __file__ aponta para pasta temp (_MEI...).
+# sys.executable sempre aponta para o .exe real.
+if getattr(sys, 'frozen', False):
+    BASE_DIR = os.path.dirname(sys.executable)
+else:
+    BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+
+sys.path.append(BASE_DIR)
 
 ctk.set_appearance_mode("Dark")
 ctk.set_default_color_theme("green")
 
-CONFIG_FILE = os.path.join(os.path.dirname(os.path.abspath(__file__)), "app_config.json")
-CACHE_FILE  = os.path.join(os.path.dirname(os.path.abspath(__file__)), "translation_cache.json")
+CONFIG_FILE = os.path.join(BASE_DIR, "app_config.json")
+CACHE_FILE  = os.path.join(BASE_DIR, "translation_cache.json")
 
 # Patch structure: (zip_internal_path, relative_to_game_root)
 PATCH_STRUCTURE = [
@@ -41,10 +47,13 @@ def save_config(cfg):
         json.dump(cfg, f, ensure_ascii=False, indent=2)
 
 def find_zip():
-    """Locate RE2_PTBR_Patch.zip: next to app.py or one folder up."""
-    here = os.path.dirname(os.path.abspath(__file__))
-    for candidate in [here, os.path.dirname(here)]:
-        p = os.path.join(candidate, "RE2_PTBR_Patch.zip")
+    """Localiza RE2_PTBR_Patch.zip: mesma pasta do .exe, pasta acima, ou qualquer outra candidata."""
+    candidates = [
+        BASE_DIR,                          # mesma pasta do .exe
+        os.path.dirname(BASE_DIR),         # pasta acima (raiz do repositório)
+    ]
+    for folder in candidates:
+        p = os.path.join(folder, "RE2_PTBR_Patch.zip")
         if os.path.exists(p):
             return p
     return None
