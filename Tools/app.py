@@ -211,18 +211,43 @@ class App(ctk.CTk):
         self.files_view.grid_rowconfigure(1, weight=1)
         self.files_view.grid_columnconfigure(0, weight=1)
 
-        ctk.CTkLabel(self.files_view,
+        # Header
+        hdr = ctk.CTkFrame(self.files_view, fg_color="transparent")
+        hdr.grid(row=0, column=0, sticky="ew", pady=(0, 8))
+        hdr.grid_columnconfigure(0, weight=1)
+
+        ctk.CTkLabel(hdr,
             text="Arquivos que serão instalados pelo Patch (apenas os traduzidos)",
-            font=ctk.CTkFont(weight="bold")).grid(
-            row=0, column=0, sticky="w", pady=(0, 8))
+            font=ctk.CTkFont(weight="bold")).grid(row=0, column=0, sticky="w")
+
+        # Action buttons next to the title
+        btn_frame = ctk.CTkFrame(hdr, fg_color="transparent")
+        btn_frame.grid(row=0, column=1, sticky="e")
+
+        ctk.CTkButton(btn_frame, text="✅  Aplicar Patch",
+                      fg_color="#28a745", hover_color="#218838",
+                      font=ctk.CTkFont(weight="bold"),
+                      command=self.apply_patch).grid(row=0, column=0, padx=(0, 6))
+
+        ctk.CTkButton(btn_frame, text="↩️  Restaurar Inglês",
+                      fg_color="#c0392b", hover_color="#a93226",
+                      command=self.restore_english).grid(row=0, column=1)
+
+        # Info label
+        ctk.CTkLabel(self.files_view,
+            text="💡  Dica: Aplique o patch original sempre que fizer edições no cache e quiser testar. "
+                 "Se algo der errado, use 'Restaurar Inglês' para voltar ao original.",
+            text_color="gray", wraplength=700, justify="left").grid(
+            row=1, column=0, sticky="w", pady=(0, 8))
 
         self.files_tree = ctk.CTkScrollableFrame(self.files_view, corner_radius=8)
-        self.files_tree.grid(row=1, column=0, sticky="nsew")
+        self.files_tree.grid(row=2, column=0, sticky="nsew")
         self.files_tree.grid_columnconfigure(0, weight=1)
+        self.files_view.grid_rowconfigure(2, weight=1)
 
         ctk.CTkButton(self.files_view, text="🔄  Atualizar lista",
                       command=self.refresh_files_view).grid(
-            row=2, column=0, sticky="e", pady=(8, 0))
+            row=3, column=0, sticky="e", pady=(8, 0))
 
     # ── Log view ──────────────────────────────────────────────────────────────
 
