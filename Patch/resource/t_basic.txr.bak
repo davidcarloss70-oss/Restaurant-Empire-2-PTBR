@@ -1,0 +1,396 @@
+509
+361
+DATE|10
+AMPM|4
+TSA|4
+T-A|1
+TS|3
+T|1
+DSA|3
+D-A|1
+DS|3
+D|1
+NAME|3
+BOX|2
+YEAR|1
+SUPPLIST|5
+BUILDIN|26
+DEFAULT|1
+REPORT|204
+COMMON|1
+ENDMONTH|22
+BUYINGRE|6
+MESSAGE|3
+EXTUP|14
+TUTOR|4
+WINLOSIN|9
+OPMENU|2
+SAVE|1
+MAINMENU|13
+TOPBAR|7
+MISC|2
+MINIMAP|1
+CUSTIN|1
+SELCMP|3
+#
+1|DATE|1|%2j{January|February|March|April|May|June|July|August|September|October|November|December} %1d, %3,4d
+2|DATE|2|%2j{Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec} %1d, %3,4d
+3|DATE|3|%1j{January|February|March|April|May|June|July|August|September|October|November|December}
+4|DATE|4|%1j{Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec}
+5|DATE|5|%1j{Monday|Tuesday|Wednesday|Thursday|Friday|Saturday|Sunday}
+6|DATE|6|%1j{Mon|Tue|Wed|Thur|Fri|Sat|Sun}
+7|AMPM|1|AM
+8|AMPM|2|PM
+9|TSA|1|%3d %3p{second|seconds}
+10|TSA|2|%2d %2p{minute|minutes}%3q{| and | and }%3z%3q{| second| seconds}
+11|TSA|3|%1d %1p{hour|hours}%2q{| and | and }%2z%2q{| minute| minutes}
+12|T-A|1|%1d %1p{hour|hours}%2q{|, |, }%2z%2q{| minute| minutes}%3q{| and | and }%3z%3q{| second| seconds}
+13|TS|1|%3d %3p{sec|secs}
+14|TS|2|%2d %2p{min|mins}%3q{| & | & }%3z%3q{| sec| secs}
+15|TS|3|%1d %1p{hr|hrs}%2q{| & | & }%2z%2q{| min| mins}
+16|T|1|%1d %1p{hr|hrs}%2q{|, |, }%2z%2q{| min| mins}%3q{| & | & }%3z%3q{| sec| secs}
+17|DSA|1|%3d %3p{day|days}
+18|DSA|2|%2d %2p{month|months}
+19|DSA|3|%1d %1p{year|years}%2q{| and | and }%2z%2q{| month| months}
+20|D-A|1|%1d %1p{year|years}%2q{|, |, }%2z%2q{| month| months}
+21|DS|1|%3d %3p{day|days}
+22|DS|2|%2d %2p{mth|mths}
+23|DS|3|%1d %1p{yr|yrs}%2q{| & | & }%2z%2q{| mth| mths}
+24|D|1|%1d %1p{yr|yrs}%2q{|, |, }%2z%2q{| mth| mths}
+25|NAME|1|New Player
+26|NAME|2|Colossus Hotels
+27|NAME|3|The Colossus
+28|BOX|1|Ok
+29|BOX|2|Cancel
+30|YEAR|1|Year
+68|SUPPLIST|1|SUPPLIER
+69|SUPPLIST|2|INGREDIENT
+70|SUPPLIST|3|QUALITY
+71|SUPPLIST|4|PRICE
+72|SUPPLIST|5|PURCHASE
+76|BUILDIN|1|LOCATION DETAILS
+77|BUILDIN|2|Size:
+78|BUILDIN|3|Building Price:
+79|BUILDIN|4|Land Price:
+80|BUILDIN|5|LOCATION LIST
+81|BUILDIN|6|INDEPENDENT RESTAURANT
+82|BUILDIN|7|NUMBER OF FLOOR:
+83|BUILDIN|8|TOTAL COST:
+84|BUILDIN|9|FRANCHISE RESTAURANT
+85|BUILDIN|10|NUMBER OF RESTAURANTS:
+86|BUILDIN|11|REVENUE PER RESTAURANT:
+87|BUILDIN|12|PROFIT PER RESTAURANT:
+89|BUILDIN|13|LAND COST:
+90|BUILDIN|14|TOTAL COST:
+91|BUILDIN|15|Please enter the name for your
+92|BUILDIN|16|Suggested Names:
+93|BUILDIN|17|Existing buildings for sale
+94|BUILDIN|18|Empty land for sale
+95|DEFAULT|1|Group
+96|REPORT|1|All Restaurants
+97|REPORT|2|Franchise
+98|REPORT|3|MANAGEMENT - RESTAURANT POLICIES
+99|REPORT|4|OPENING HOURS:
+100|REPORT|5|CLOSING HOURS:
+101|REPORT|6|LAST ORDER TIME:
+102|REPORT|7|MANAGEMENT - LOANS
+103|REPORT|8|TOTAL LOAN
+104|REPORT|9|MONTHLY INTEREST
+105|REPORT|10|CREDIT LIMIT
+106|REPORT|11|ANNUAL INTEREST RATE
+107|REPORT|12|BORROW
+108|REPORT|13|REPAY
+109|REPORT|14|YEARLY LOAN GRAPH
+110|AMPM|3|am
+111|AMPM|4|pm
+112|COMMON|1|restaurant:
+113|REPORT|15|LIST - SPECIAL INGREDIENT SUPPLIER
+114|REPORT|16|SUPPLIER
+115|REPORT|17|CITY
+116|REPORT|18|LOCATION
+117|REPORT|19|INVENTORY
+118|REPORT|20|PRICE
+119|REPORT|21|QUALITY
+120|REPORT|22|LIST - STAR CHEFS
+121|REPORT|23|ACHIEVEMENTS
+122|REPORT|24|Reputation
+123|REPORT|25|Morale
+124|REPORT|26|Age:
+134|ENDMONTH|1|REPORT %1s FOR
+135|ENDMONTH|2|DAILY
+136|ENDMONTH|3|MONTHLY
+137|ENDMONTH|4|REVENUE
+138|ENDMONTH|5|Cost of Goods Sold
+139|ENDMONTH|6|GROSS PROFIT
+140|ENDMONTH|7|EXPENSE
+141|ENDMONTH|8|Ingredients Costs
+142|ENDMONTH|9|Drinks Costs
+143|ENDMONTH|10|Salaries
+144|ENDMONTH|11|Training
+145|ENDMONTH|12|Advertising Expenses
+146|ENDMONTH|13|Maintenance Costs
+147|ENDMONTH|14|Write - offs
+148|ENDMONTH|15|Adventure Cash Flow
+149|ENDMONTH|16|PROFIT
+150|DATE|7|%1j{JAN|FEB|MAR|APR|MAY|JUN|JUL|AUG|SEP|OCT|NOV|DEC}
+151|DATE|8|%1j{JANUARY|FEBRUARY|MARCH|APRIL|MAY|JUNE|JULY|AUGUST|SEPTEMBER|OCTOBER|NOVEMBER|DECEMBER}
+168|BUYINGRE|1|I'll Take it!
+169|BUYINGRE|2|Forget it
+170|BUYINGRE|3|TOTAL PRICE
+171|BUYINGRE|4|Thanks!
+177|REPORT|27|REPORT - RESTAURANT RATINGS
+178|REPORT|28|OVERALL RATING
+179|REPORT|29|Category
+180|REPORT|30|Rating
+181|REPORT|31|Weight
+182|REPORT|32|Food
+183|REPORT|33|Environment
+184|REPORT|34|Service
+185|REPORT|35|Price
+186|REPORT|36|Complaints
+187|REPORT|37|Franchise Consistence
+188|REPORT|38|ENVIRONMENT RATING
+189|REPORT|39|Decoration
+190|REPORT|40|Comfort
+191|REPORT|41|Music and Entertainment
+192|REPORT|42|Exterior and View
+193|ENDMONTH|17|Rents
+194|REPORT|43|REPORT - INCOME STATEMENT
+195|REPORT|44|Today
+196|REPORT|45|Last Month
+197|REPORT|46|This Year
+198|REPORT|47|Last Year
+199|REPORT|48|Lifetime
+200|ENDMONTH|18|Miscellaneous
+201|REPORT|49|MANAGEMENT - STAFF TRAINING
+202|REPORT|50|FRANCHISE
+203|REPORT|51|Monthly Spending
+204|REPORT|52|Average Staff Skill
+205|REPORT|53|RESTAURANT
+206|REPORT|54|TOTAL MONTHLY SPENDING:
+207|REPORT|55|MANAGEMENT - ADVERTISING
+208|REPORT|56|Customer Awareness
+209|REPORT|57|REPORT - STATISTICS
+210|REPORT|58|NUMBER OF RESTAURANTS
+211|REPORT|59|NUMBER OF FRANCHISE
+212|REPORT|60|AVERAGE RESTAURANT RATING
+213|REPORT|61|AVERAGE CUSTOMER SATISFACTION
+214|REPORT|62|AVERAGE CUSTOMER AWARENESS
+215|REPORT|63|TOTAL NUMBER OF CUSTOMERS DAILY
+216|REPORT|64|TOTAL NUMBER OF SEATS
+217|REPORT|65|TOTAL NUMBER OF COURSES SERVED
+218|REPORT|66|TOTAL NUMBER OF DRINKS SERVED
+219|REPORT|67|AVERAGE SPENDING PER CUSTOMER
+220|REPORT|68|SEAT OCCUPANCY
+221|REPORT|69|CUSTOMER TURNOVER
+222|REPORT|70|PERCENTAGE OF COURSES SERVED ON TIME
+223|REPORT|71|TOTAL NUMBER OF EMPLOYEES
+224|REPORT|72|TOTAL ASSETS
+225|REPORT|73|OPERATING PROFIT MARGIN
+226|REPORT|74|AVERAGE PROFIT MADE PER CUSTOMER/HOUR
+227|REPORT|75|MARKET SHARE
+289|REPORT|76|REPORT - SALES REPORT
+290|REPORT|77|APPETIZER
+291|REPORT|78|MAIN COURSE
+292|REPORT|79|BREAKFAST
+293|REPORT|80|SOUP
+294|REPORT|81|DESSERT
+295|REPORT|82|COLD BEVERAGE
+296|REPORT|83|HOT BEVERAGE
+297|REPORT|84|TOTAL:
+298|REPORT|85|GOAL - SCORE
+299|REPORT|86|AVERAGE RESTAURANT RATING
+300|REPORT|87|MONTHLY REVENUE
+301|REPORT|88|MONTHLY PROFIT
+302|REPORT|89|GOAL ACHIEVEMENT BONUS (ACCUMULATED)
+303|REPORT|90|NUMBER OF STAR CHEFS
+304|REPORT|91|YOUR TOTAL SCORE:
+305|REPORT|92|GOAL - GOAL
+306|REPORT|93|MAIN GOAL (%1d out of %2d goal achieved)
+307|REPORT|94|SIDE GOAL (%1d out of %2d goal achieved)
+308|REPORT|95|GOAL
+309|REPORT|96|TARGET
+310|REPORT|97|CURRENT
+311|REPORT|98|ACHIEVED
+312|REPORT|99|SCORE BONUS
+313|REPORT|100|You have been playing for %1s
+314|REPORT|101|(Real playing time: %1s)
+315|REPORT|102|Game Started
+316|REPORT|103|Game Ends
+317|REPORT|104|REPORT - GRAPHS
+318|REPORT|105|Monthly Profit
+319|REPORT|106|Monthly Revenue
+320|REPORT|107|Monthly Expense
+321|REPORT|108|Customer Satisfaction
+322|REPORT|109|Customer Turnover
+323|REPORT|110|Number of Customers
+324|REPORT|111|LIST - RESTAURANT LIST
+325|REPORT|112|All Companies
+326|REPORT|113|All Cities
+327|REPORT|114|%1j{Restaurant Name|RESTAURANT NAME}
+328|REPORT|115|%1j{Owner|OWNER}
+329|REPORT|116|%1j{Location|LOCATION}
+330|REPORT|117|%1j{City|CITY}
+331|REPORT|118|%1j{Overall Rating|OVERALL RATING}
+332|REPORT|119|%1j{Restaurant Type|RESTAURANT TYPE}
+333|REPORT|120|%1j{Number of floors|# OF FLOORS}
+334|REPORT|121|%1j{Number of seats|# OF SEATS}
+335|REPORT|122|%1j{Customer satisfaction|CUST. SATISFACTION}
+336|REPORT|123|%1j{Customer awareness|CUST.  AWARENESS}
+337|REPORT|124|%1j{Last month revenue|LAST REVENUE}
+338|REPORT|125|%1j{Last month profit|LAST PROFIT}
+339|REPORT|126|%1j{Total number of customers daily|DAILY CUSTOMERS}
+340|REPORT|127|%1j{Total number of courses served|# OF FOOD}
+341|REPORT|128|%1j{Total number of drinks served|# OF DRINKS}
+342|REPORT|129|%1j{Seat occupancy|SEAT OCCU.}
+343|REPORT|130|%1j{Customer turnover|TURNOVER}
+344|REPORT|131|%1j{Percentage of courses served on time|% OF FOOD ON TIME}
+345|REPORT|132|%1j{Total number of employees|# OF EMPLOYEES}
+346|REPORT|133|%1j{Operating profit margin|PROFIT MARGIN}
+347|REPORT|134|%1j{Average spending per customer|AVG SPENDING}
+348|REPORT|135|%1j{Average profit made per customer/hour|AVG PROFIT/CUST.}
+349|REPORT|136|%1j{Opening date|OPENING DATE}
+350|REPORT|137|AVAILABLE FIELDS:
+351|REPORT|138|DATA OF LAST MONTH
+352|REPORT|139|
+354|MESSAGE|1|Take me there!
+355|MESSAGE|2|unread messages.
+356|EXTUP|1|Apply to Franchise Restaurants
+357|EXTUP|2|Restaurant Rating:
+358|EXTUP|3|Total Cost:
+359|EXTUP|4|Exterior Item
+360|EXTUP|5|Cost
+361|EXTUP|6|Required Rating
+363|TUTOR|1|MAXIMIZE
+364|TUTOR|2|MINIMIZE
+365|TUTOR|3|NEXT
+369|WINLOSIN|1|RESULTS
+370|WINLOSIN|2|You have unsuccessfully completed this scenario.  Try again - better luck next time!
+371|WINLOSIN|3|Great job - you have successfully completed the %1s scenario!
+372|WINLOSIN|4|AUTO-SAVING...
+373|WINLOSIN|5|TRY AGAIN
+374|WINLOSIN|6|QUIT TO MAIN MENU
+375|WINLOSIN|7|CONTINUE
+376|WINLOSIN|8|AUTO-SAVE COMPLETE
+377|WINLOSIN|9|More adventures await you... Good luck on your next quest!
+382|REPORT|140|Sub Total
+383|BUILDIN|22|Empty name is not allow.
+384|BUILDIN|23|Your firm name is used by other firm.
+388|OPMENU|1|Are you sure you want to quit to the Main Menu?
+389|OPMENU|2|Are you sure you want to quit to Windows?
+391|TUTOR|4|OK
+392|REPORT|141|Scenario Started
+393|REPORT|142|Deadline
+394|TSA|4|%1d %1p{minute|minutes}
+395|REPORT|143|1st Place
+396|REPORT|144|2nd Place
+397|REPORT|145|3rd Place
+398|REPORT|146|Won
+399|REPORT|147|Nil
+400|BUILDIN|24|View Rating:
+401|BUILDIN|25|Traffic Volume:
+402|BUILDIN|26|Monthly Maintenance Cost:
+403|EXTUP|7|Original Exterior and View Rating:
+404|EXTUP|8|Exterior and View Rating with the Upgrade:
+405|SAVE|1|Scenario Auto Save
+406|REPORT|148|LIST - POPULAR FOOD
+407|REPORT|149|RECOGNITIONS
+408|REPORT|150|Rank
+409|REPORT|151|Food
+410|REPORT|152|Popularity
+411|REPORT|153|REPORT - COMPLAINTS
+412|REPORT|154|COMPLAINTS
+413|REPORT|155|SERIOUSNESS
+414|REPORT|156|Number of Complaints:
+415|REPORT|157|N/A
+416|REPORT|158|Your Restaurant Group:
+417|MAINMENU|1|Copyright ©2010 Enlight Software Limited. All rights reserved.
+418|REPORT|159|Customer Satisfaction
+424|DATE|9|%1j{Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec} %2d
+425|REPORT|160|Cannot rename a firm that is given by a NPC.
+426|EXTUP|9|You don't have enough cash on hand.
+427|REPORT|161|%1j{Food Rating|FOOD RATING}
+428|REPORT|162|%1j{Environment Rating|ENV. RATING}
+429|REPORT|163|%1j{Service Rating|SERVICE RATING}
+430|REPORT|164|%1j{Price Rating|PRICE RATING}
+431|REPORT|165|%1j{Complaint Rating|COMPLAINT RATING}
+432|TOPBAR|1|%1d/%2d
+433|TOPBAR|2|CONGRATULATIONS!
+434|TOPBAR|3|Your restaurant's customer awareness has increased to %1d, thanks your improving track record...
+435|TOPBAR|4|...and now you can expect a daily total of %1d customers in your restaurant!
+436|REPORT|166|%1j{Market share|MARKET SHARE}
+437|BUYINGRE|5|%1s's inventory is fully stocked!  Please reduce the number of purchasing ingredients and try again.
+438|MAINMENU|2|THIS IS A BETA VERSION. DISTRIBUTION OF IT IS STRICTLY PROHIBITED
+439|REPORT|167|YES
+440|REPORT|168|No
+441|TOPBAR|5|MAX
+442|ENDMONTH|19|PROCEED
+443|MESSAGE|3|MESSAGES
+444|MISC|1|and
+445|BUYINGRE|6|INGREDIENTS
+446|REPORT|169|INFORMATION CENTER
+447|EXTUP|10|UPGRADE EXTERIOR
+448|REPORT|170|%1j{(Projected)|(PROJECTED)}
+449|MINIMAP|1|MAP
+450|BUILDIN|27|RESTAURANT TYPE AND DETAILS
+451|MAINMENU|3|NEW GAME
+452|MAINMENU|4|SANDBOX GAME
+453|MAINMENU|5|LOAD A SAVED GAME
+454|MAINMENU|6|CREDITS
+455|MAINMENU|7|EXIT
+456|BUILDIN|28|LOCATION
+457|MAINMENU|8|
+458|ENDMONTH|20|ALL YOUR RESTAURANTS
+459|REPORT|171|MAIN GOALS (%1d out of %2d goals achieved)
+460|REPORT|172|SIDE GOALS (%1d out of %2d goals achieved)
+461|REPORT|173|Restaurant Overall Rating
+462|MAINMENU|9|
+463|REPORT|174|CUSTOMERS SHARING TABLES:
+464|REPORT|175|NO
+465|TOPBAR|6|You have met the goal of
+466|TOPBAR|7|customer satisfaction!
+467|MISC|2|The arrow indicator is red! That means the customer is currently busy with another activity. Try again when the arrow indicator turns green.
+468|REPORT|176|Work at:
+469|EXTUP|11|Restaurant Name
+470|EXTUP|12|City
+471|EXTUP|13|Cuisine
+472|EXTUP|14|Rating
+473|REPORT|177|SET MEAL
+474|REPORT|178|Set Lunch
+475|REPORT|179|Set Dinner
+476|CUSTIN|1|%1d %1p{min|mins}
+477|MAINMENU|10|Version %s
+478|DATE|10|%1dyear%2dmonth%3dday
+479|REPORT|180|LIST - PERFORMANCE LIST
+480|REPORT|181|PERFORMANCE TYPE
+481|REPORT|182|PERFORMER(S)
+482|REPORT|183|HOURLY RATE
+483|REPORT|184|RATING
+484|REPORT|185|AVAILABILITY
+485|REPORT|186|
+486|REPORT|187|
+487|REPORT|188|
+488|REPORT|189|Live Performance
+487|REPORT|190|
+488|REPORT|191|
+489|ENDMONTH|21|Live Performance
+490|REPORT|192|LIST - SPECIAL FURNITURE SUPPLIER
+491|REPORT|193|DESIGNER
+492|REPORT|194|
+493|REPORT|195|SPECIALIZED FURNITURE TYPE
+494|MAINMENU|11|CAMPAIGN RE1
+495|MAINMENU|12|CAMPAIGN RE2
+496|MAINMENU|13|BACK
+497|REPORT|196|MANAGEMENT - STAFF UNIFORM
+498|REPORT|197|MALE
+499|REPORT|198|FEMALE
+500|REPORT|199|MANAGEMENT - RECIPE RESEARCH
+501|ENDMONTH|22|Recipe Research
+502|REPORT|200|Cuisine
+503|REPORT|201|Recipe Type
+504|REPORT|202|Grade
+505|REPORT|203|Monthly Spending
+506|REPORT|204|Research Progress
+507|SELCMP|1|If this is your first time playing Restaurant Empire, please select Campaign 1 which will guide you through a series of tutorials. Do you still want to start Campaign 2 now?
+508|SELCMP|2|Fresh out of culinary school, young Armand Lebouf travels to Paris to see Uncle Michel - renowned chef and owner of famed brasserie the Treize a table. Little does he know, all is not well with the Leboufs in Paris. Driven out of business by a ruthless competitor, the restaurant is no more. Armand is determined to settle the score and restore this iconic restaurant back to prominence. But it will take more than just smarts and cooking talent to topple a juggernaut. He will need friends.
+509|SELCMP|3|With OmniFood ruined and success firmly in hand, Armand and Delia finally get hitched. But, like any other marriage, it is not bound to be all roses in the Lebouf house. As the lure of celebrity tugs at Armand and Delia carves her own professional path, their careers will soon be at odds and their marriage put to the test. With OmniFood, the enemy was staring right at them, the problem was simple. Now that it's just the two of them, it won't be so easy.

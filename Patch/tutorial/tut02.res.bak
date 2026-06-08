@@ -1,0 +1,123 @@
+[MESSAGE]Well done, Armand! Now that you know how to decorate your restaurant, let's see what you'll serve your customers - this is a food establishment, after all! 
+
+_Left-click_ on the _Food Menu_ button. You will see your restaurant's menu cover. You do not have any dishes set up in the menu yet, so this is the first thing that we will remedy.
+[POSITION]475,32 
+[DIMENSION]310,250
+[HINT]155,565,190,595
+
+[MESSAGE]Below the menu is the _food menu interface_. There are several buttons, but for now, we will focus on adding recipes to your menu - I will explain to you the other buttons in further detail later on. Let's add a recipe to your menu now. To do this, _left-click_ on the _Add Recipe_ button. 
+[POSITION]475,32 
+[DIMENSION]310,250
+[HINT]334,457,647,494
+
+[MESSAGE]You will notice that the _food menu_ interface has been swapped with the _recipes interface_, the repository of all your available recipes. As you are just starting out you only have a handful of recipes available. The five square buttons on the top of the _recipe interface_ represent food course categories. _Left-click_ on the _Next_ button to continue.
+[POSITION]475,32 
+[DIMENSION]310,250
+[HINT]193,106,356,134
+
+[MESSAGE]Below the food course buttons is a recipe pane of the recipe currently viewed, as well as its name. The recipe pane also has two round arrow buttons that can be used to go forward and back through your list of recipes - in this case, the _Main Courses_. Go ahead - try it now. _Left-click_ on the arrow buttons to cycle through your available recipes. When you're done, _left-click_ on the _Next_ button.
+[POSITION]475,32 
+[DIMENSION]310,250
+[HINT]116,137,331,183
+
+[MESSAGE]Notice the flag icons at the end of each recipe? The flag icons indicate a recipe's suitability for a certain cuisine - French recipes with French cuisine, Italian recipes with Italian cuisine, and so on. Sometimes there is more than one flag icon for a given recipe. That means the recipe is aptly suited for more than one cuisine.
+
+_Left-click_ on the _Next_ button to continue.
+[POSITION]475,32 
+[DIMENSION]310,250
+[HINT]116,137,331,183
+
+[MESSAGE]Now instead of flipping through the list one-by-one using the arrow buttons, let's bring up the drop-down list. Simply  _left-click_ anywhere in the _Recipe Name Display_. Give it a try. You will be able to view several recipes at the same time. You can also use the scroll bar to go up and down your list. 
+
+Why don't you choose a recipe now? Simply _left-click_ on a recipe.
+[POSITION]475,32 
+[DIMENSION]310,250
+[HINT]
+
+[MESSAGE]You will notice on the bottom of the _Recipe Interface_ four large, round buttons. These are, from left to right, the _Duplicate Recipe_, the _Add to Food Menu_, the _View Food Menu_ and the _Filtering Toggle_ buttons. To add this recipe to your menu, _left-click_ on the _Add to Food Menu_ button. A popup window will appear confirming the new recipe entry in your menu.
+[POSITION]475,32 
+[DIMENSION]310,250
+[HINT]206,458,350,494
+
+[MESSAGE]To see your new recipe on the menu, _left-click_ on the _View Food Menu_ button.
+[POSITION]475,32 
+[DIMENSION]310,250
+[HINT]206,458,350,494
+
+[MESSAGE]Now you're back in the _Food Menu_ interface, the difference being we have added a recipe. Now at least customers can order something!
+
+This is a rather spartan selection that you offer. Let's try to add some variety to the menu by repeating the procedure to add more recipes. When you are done establishing your menu, _left-click_ on the _Next button_ to continue.
+[POSITION]475,32 
+[DIMENSION]310,250
+[HINT]
+
+[MESSAGE]Make sure you are viewing the Food menu interface for this next step. Notice on the food menu how arrow buttons appear on the bottom corners of the menu pages? Use these buttons to flip through the pages of your menu. Why don't you see what you have decided to offer your future clientele by _left-clicking_ on the _previous page_ and _next page_ arrow buttons?
+
+When you are done viewing the recipes in your menu, _left-click_ on the _Next_ button to continue.
+[POSITION]475,32 
+[DIMENSION]310,250
+[HINT]104,423,696,443
+
+[MESSAGE]So far, so good! Now that you understand the basics of adding recipes to your menu, let's look at what other things you can do to make your customers' stay all the more enjoyable. Now that customers can savor your recipes, they will want something to wash down their meals with.
+
+Let's add beverage services to your restaurant by _left-clicking_ on the _Add Beverage_ button.
+[POSITION]475,32 
+[DIMENSION]310,250
+[HINT]530,461,565,492
+
+[MESSAGE]A pop-up with a list of hot and cold beverages will appear. The cold beverages are further divided into alcoholic and non-alcoholic. All the beverages come with a fixed buying price, so all you have to do is _left-click_ on the check boxes to the left of each beverage to include it as part of your restaurant service. When you're done choosing the beverages, _left-click_ on the _OK_ button at the bottom of the beverage list.
+[POSITION]475,32 
+[DIMENSION]310,250
+[HINT]
+
+[MESSAGE]In case you haven't noticed, I'd like to give you a word on alcoholic beverages: If you plan to serve liquor, you will need to pay a liquor license fee of $20,000 up front before you can serve alcoholic beverages. Despite the licensing costs, this is a bargain, as alcoholic beverages net the greatest profit margins.
+
+_Left-click_ on the _Next button_ to continue.
+[POSITION]475,32 
+[DIMENSION]310,250
+[HINT]
+
+[MESSAGE]Let's tart up the menu design. There are three things you can do to alter your menu's appearance: you can change the title font, the text font, and the background design of your menu. Let's start by changing the title font. _Left-click_ on the _Title Font_ button. Two arrow buttons will appear to the sides. Use these arrow buttons to cycle through the available fonts until you see a font that you like. Then deactivate the _Title Font_ button by _left-clicking_ on it again.
+[POSITION]475,32 
+[DIMENSION]310,250
+[HINT]337,460,369,493
+
+[MESSAGE]You can also _left-click_ on the _Text Font_ and the _Background_ buttons to change your restaurant menu's appearance. Design your menu until you have customized its appearance to your liking - and to your restaurant's suiting.
+
+When you are done, _left-click_ on the _Next_ button to continue.
+[POSITION]475,32 
+[DIMENSION]310,250
+[HINT]374,456,452,494
+
+[MESSAGE]There's only a bit more to go. If you ever want to view specifics regarding any recipe in your menu, simply _double-click_ on the recipe name, and you will be brought back to the _Recipe Menu_ interface, where you can view detailed information regarding that recipe. Go ahead - give it a try. Check any recipe's details by _double-clicking_ on a recipe entry in your menu.
+[POSITION]475,32 
+[DIMENSION]310,250
+[HINT]159,184,382,220
+
+[MESSAGE]Notice the _Default Price_ on the _Recipe Menu_, which is your restaurant's selling price for that recipe.
+
+When you are ready, _left-click_ on the _Next_ button to continue.
+[POSITION]475,32 
+[DIMENSION]310,250
+[HINT]85,448,202,494
+
+[MESSAGE]The last thing I want to go over with you is on the _Food Menu_ interface, so bring up the _Food Menu_ interface if you haven't done so already by _left-clicking_ on the _View Food Menu_ button.
+[POSITION]475,32 
+[DIMENSION]310,250
+[HINT]279,460,312,494
+
+[MESSAGE]If you ever want to get rid of a recipe from the menu, say, due to poor sales, then _highlight the recipe_ in mind by _left-clicking_ on the recipe name, then _left-click_ on the _Delete Recipe_ button located on the bottom of the _Food Menu_ interface. The highlighted recipe will then be removed from your menu. Try this now - remove any existing recipe from your menu. A popup window will ask you to confirm deletion. _Left-click_ on the _OK_ button to continue.
+
+Should you change your mind, you still can go back to the recipe interface to add the recipe back into the food menu.
+[POSITION]402,33 
+[DIMENSION]400,200
+[HINT]611,462,645,492
+
+[MESSAGE]Excellent! You are becoming quite skilled at juggling recipes and menus! Now all you have to do is to properly set up your food menu for your new restaurant using the skills you have just learnt in this tutorial.
+
+When setting up your menu, remember that variety is the spice of life! Try to add as many breakfast, appetizer, soup, main course and dessert recipes as you can. This will give your customers a wide selection of offerings from which to use. And don't forget the beverages!
+
+After you're done setting up your restaurant's menu, there's one last thing I want to show you before I feel confident to unleash you into the world of high cuisine. _Meet me back at my house for your next crash course in becoming a restaurateur!_
+[POSITION]475,32 
+[DIMENSION]310,250
+[HINT]

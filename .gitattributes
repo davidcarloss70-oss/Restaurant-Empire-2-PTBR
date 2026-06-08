@@ -1,2 +1,16 @@
 # Auto detect text files and perform LF normalization
 * text=auto
+
+# Arquivos binários do jogo - NÃO converter quebras de linha
+*.res binary
+*.SET binary
+*.SET.bak binary
+*.res.bak binary
+*.BIN binary
+*.exe binary
+*.dll binary
+*.json text eol=lf
+
+# Arquivos de texto do jogo que podem ser convertidos com segurança
+*.txr text
+*.txr.bak text

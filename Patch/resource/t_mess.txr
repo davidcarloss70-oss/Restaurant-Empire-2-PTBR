@@ -1,0 +1,33 @@
+29
+29
+MESS|29
+#
+1|MESS|1|%1s construiu um novo restaurante %2s em %3s!
+2|MESS|2|%1s fechou seu %2s em %3s!
+3|MESS|3|Parabéns! A receita do seu grupo de restaurantes atingiu um recorde de %1,2d! Continue com o bom trabalho!
+4|MESS|4|Parabéns! O lucro do seu grupo de restaurantes atingiu um recorde de %1,2d! Agora é a hora de melhorar o seu restaurante!
+5|MESS|5|Houve diversas reclamações sobre seu %1s.  Talvez você devesse analisar essas reclamações e resolvê-las antes que a situação fique fora de controle...
+6|MESS|6|%1s %2s pediu demissão do seu restaurante, o %3s! Certifique-se de ter todos os cargos de sua equipe cobertos!
+7|MESS|7|Seu restaurante %1s está perdendo %2,2d todos os meses. Você deve fazer algo a respeito se não quiser ver seu capital diminuir!
+8|MESS|8|Parabéns! Você alcançou uma meta de %1?{principal|lado}: %2s!
+9|MESS|9|É melhor você se apressar - você só tem %1d %1p{mês|meses} se quiser obter o %2p{meta|metas}!
+10|MESS|10|Sr. Empregador, não posso fazer %1s a menos que %2s esteja instalado! Que tal nos fornecer algumas ferramentas aqui na cozinha para prepararmos todas aquelas receitas chiques?
+11|MESS|11|Seu %1s é simplesmente horrível. Não deveria estar listado no menu de comida! Talvez você deva analisar a classificação de popularidade de suas receitas e fazer os ajustes necessários.
+12|MESS|12|Sua equipe pega os pratos na Estação de Espera para entregar a comida. Sem ele, eles não podem entregar comida! As estações de espera são encontradas em Itens de cozinha na interface do painel interno.
+13|MESS|13|A recepção é onde os clientes são recebidos e conduzidos à sua mesa. Sem um devidamente colocado em seu restaurante, os clientes podem nem pensar em entrar em seu restaurante!
+14|MESS|14|A recepção é onde os clientes são recebidos e conduzidos à sua mesa. Sem uma recepcionista no seu restaurante, os clientes podem nem pensar em entrar no seu restaurante!
+15|MESS|15|Devido ao baixo moral, %1s quer renunciar. Se você quiser manter essa pessoa em sua folha de pagamento, talvez seja necessário um aumento?
+16|MESS|16|Devido ao baixo moral, %1s renunciou! Agora você tem %2d %3s%2p{|é} trabalhando em %4s. Talvez você devesse resolver quaisquer problemas com o moral da sua equipe, bem como contratar quaisquer substitutos necessários...
+17|MESS|17|Devido ao baixo moral, %1s renunciou! Você fica sem nenhum %2s funcionando em %3s. É melhor contratar um substituto se quiser que seu restaurante esteja em pleno funcionamento!
+18|MESS|18|Seus clientes tiveram uma experiência gastronômica terrível – e quem os culpa? A comida chegou tarde e fria! Talvez você devesse melhorar seus prazos de entrega para compensar essas reclamações...
+19|MESS|19|Os clientes saíam do seu restaurante sem comer – nenhuma das comidas oferecidas no cardápio agradava ao seu paladar exigente. Talvez seja necessária uma mudança de menu?
+20|MESS|20|Os clientes saíram do seu restaurante sem comer! A qualidade dos alimentos oferecidos não corresponde às expectativas dos clientes. Aumente a qualidade dos alimentos ou reduza os preços.
+21|MESS|21|Devido à crescente clientela, alguns clientes não são atendidos porque os assentos disponíveis ultrapassaram a capacidade. Se possível, adicione mais mesas para acomodar os clientes excedentes.
+22|MESS|22|Sua classificação de celebridade aumentou em %1d pontos!
+23|MESS|23|Sua classificação de celebridade aumentou em %1d pontos!
+24|MESS|24|Sua classificação de celebridade aumentou apenas %1d pontos!
+25|MESS|25|Sua classificação de celebridade aumentou em %1d pontos!
+26|MESS|26|Sua classificação de celebridade diminuiu %1d pontos!
+27|MESS|27|Sua classificação de celebridade caiu %1d pontos!
+28|MESS|28|Parabéns, sua pesquisa deu resultados. Agora você tem uma nova receita "%1s"!
+29|MESS|29|Parabéns, sua pesquisa deu resultados. Você é recompensado com uma receita definitiva "%1s"!

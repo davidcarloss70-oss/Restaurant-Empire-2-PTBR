@@ -1,0 +1,21 @@
+14
+14
+OPENAL|4
+DMUSIC|4
+GAMEFILE|5
+TUTORIAL|1
+#
+1|OPENAL|1|An error occurred while initializing the OpenAL engine (%1s).
+2|OPENAL|2|The audio device may be in use by another application.
+3|OPENAL|3|
+4|OPENAL|4|Do you want to continue?
+5|DMUSIC|1|An error occurred while initializing the DirectMusic engine.
+6|DMUSIC|2|The audio device may be in use by another application.
+7|DMUSIC|3|
+8|DMUSIC|4|Do you want to continue?
+9|GAMEFILE|1|An error occurred while loading the file.
+10|GAMEFILE|2| An error occurred while saving the file.
+11|GAMEFILE|3| An error occurred while creating the file.
+12|GAMEFILE|4| An error occurred while opening the file.
+13|GAMEFILE|5|Invalid file format.
+14|TUTORIAL|1|The tutorial text for this step cannot be fully displayed in the tutorial window.

@@ -1,0 +1,13 @@
+[MESSAGE]What do we have here? It seems you've just found yourself a new business partner. Let's take a look at what your new furniture supplier can offer you.
+
+To do so, open the _Furniture Supplier List_ that is located under the _Report List_ of the _Information Center._
+[POSITION]475,32
+[DIMENSION]310,250
+[HINT]
+
+[MESSAGE]The _Furniture Supplier List_ shows you a catalog of all the furniture supplier contacts that you have. To check the details of each supplier, simply highlight the supplier and their products will be revealed at the bottom of the window. Clicking the left and right buttons found on the sides of the catalog will allow you to browse through the entire collection.
+
+Note that once a supplier has been added to the supplier list, all the items offered from that company are automatically added to the _Interior Panel_.
+[POSITION]475,32
+[DIMENSION]310,250
+[HINT]

@@ -1,0 +1,44 @@
+39
+38
+CUSTIN|26
+OFFERFD|12
+|0
+#
+1|CUSTIN|1|Time in restaurant:
+2|CUSTIN|2|Budget:
+3|CUSTIN|3|Quality expectation:
+4|CUSTIN|4|Companions:
+5|CUSTIN|5|Satisfaction:
+6|CUSTIN|6|Bill amount:
+7|CUSTIN|7|Favorite food:
+8|CUSTIN|8|In
+9|CUSTIN|9|Breakfast
+10|CUSTIN|10|Lunch
+11|CUSTIN|11|Afternoon Tea
+12|CUSTIN|12|Dinner
+13|CUSTIN|13|Having
+14|CUSTIN|14|Waiting for:
+15|CUSTIN|15|Now eating:
+16|CUSTIN|16|Now drinking:
+17|CUSTIN|17|SET MEAL
+18|CUSTIN|18|FOOD ORDERED
+19|CUSTIN|19|%1d %1p{mins|mins}
+20|CUSTIN|20|COMPLAINT
+21|CUSTIN|21|%1p{COMPLAINT|COMPLAINTS} Total: %1d
+22|CUSTIN|22|Actual food quality:
+23|OFFERFD|1|%1?{CUSTOMER:|CUSTOMER:}
+24|OFFERFD|2|%1?{CUSTOMER'S FAVORITE FOOD:|CUSTOMER'S FAVORITE FOOD:}
+25|OFFERFD|3|CHEF TO COOK:
+26|OFFERFD|4|PRICE
+27|OFFERFD|5|%1?{Offer this recipe to the customer?|Offer this recipe to the customer?}
+28|OFFERFD|6|%1?{The customer|The customer} gladly accepts your offer!
+29|OFFERFD|7|%1?{The customer|The customer} unfortunately rejects your offer because %1?{he|she} has already ordered enough food to eat!
+30|OFFERFD|8|%1?{The customer|The customer} unfortunately rejects your offer because %1?{he|she} thinks that the offering price is too high!
+31|OFFERFD|9|%1?{The customer|The customer} unfortunately rejects your offer because %1?{he|she} has already finished %1?{his|her} meal!
+33|OFFERFD|10|%1?{The customer|The customer} unfortunately rejects your offer because %1?{he|she} already ordered the same recipe you are offering!
+34|OFFERFD|11|%1?{The customer|The customer} unfortunately rejects your offer because %1?{he|she} has already ordered enough to eat for the current food course!
+35|CUSTIN|23|DETAIL
+36|CUSTIN|24|Total Customers:
+37|CUSTIN|25|CUSTOMERS
+38|OFFERFD|12|OFFER FAVORITE FOOD
+39|CUSTIN|26|Has Ordered Favorite Food!

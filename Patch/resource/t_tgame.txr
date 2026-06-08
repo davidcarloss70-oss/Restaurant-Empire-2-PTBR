@@ -1,0 +1,67 @@
+60
+60
+TGAME|20
+WINLOSE|20
+TUTORIAL|20
+#
+1|TGAME|1|Ilimitado
+2|TGAME|2|Você venceu!
+3|TGAME|3|Você perde!
+4|TGAME|4|Não há mais movimentos!
+5|TGAME|5|Bata
+6|TGAME|6|Espátula
+7|TGAME|7|Faca
+8|TGAME|8|Relógio
+9|TGAME|9|Conjunto de ferramentas
+10|TGAME|10|Descartar uma linha da grade
+11|TGAME|11|Descartar uma coluna da grade
+12|TGAME|12|Descarte o conjunto de peças 3 por 3 da grade
+13|TGAME|13|Adicione um minuto ao cronômetro
+14|TGAME|14|Reembaralhe as peças restantes
+15|TGAME|15|Status: %1d%%
+16|TGAME|16|Próximo
+17|TGAME|17|
+18|TGAME|18|
+19|TGAME|19|
+20|TGAME|20|
+21|WINLOSE|1|Parabéns! Você fez um ótimo show.
+22|WINLOSE|2|Parabéns! Você teve um ótimo desempenho.
+23|WINLOSE|3|Parabéns! Você teve um ótimo desempenho no show.
+24|WINLOSE|4|Correspondências: %1d
+25|WINLOSE|5|Ingredientes básicos coletados: %1d
+26|WINLOSE|6|Ingredientes opcionais coletados: %1d
+27|WINLOSE|7|Seu tempo: %1d:%2d
+28|WINLOSE|8|Seu tempo: %1d:0%2d
+29|WINLOSE|9|Bônus de tempo: %1d
+30|WINLOSE|10|Pontuação: %1d
+31|WINLOSE|11|Sua Classificação de Celebridade aumenta de %1d para %2d.
+32|WINLOSE|12|Continuar
+33|WINLOSE|13|Desculpe, você teve um desempenho ruim no show.
+34|WINLOSE|14|Tente novamente
+35|WINLOSE|15|Tente novamente no modo fácil
+36|WINLOSE|16|Grande Espetáculo
+37|WINLOSE|17|Show ruim
+38|WINLOSE|18|Sua classificação de celebridade permanece em %1d.
+39|WINLOSE|19|
+40|WINLOSE|20|
+41|TUTORIAL|1|Faça combinações de três ou mais trocando peças adjacentes.
+42|TUTORIAL|2|Colete todos os ingredientes básicos necessários fazendo match-3 para terminar este nível.
+43|TUTORIAL|3|Colete ingredientes opcionais para bônus
+44|TUTORIAL|4|Carregue os itens especiais no topo da tela combinando 4 ou mais peças ao mesmo tempo.
+45|TUTORIAL|5|Este ingrediente está congelado. Você precisa combinar para derreter o gelo.
+46|TUTORIAL|6|FIM DO TUTORIAL
+47|TUTORIAL|7|PRÓXIMO
+48|TUTORIAL|8|
+49|TUTORIAL|9|
+50|TUTORIAL|10|
+51|TUTORIAL|11|
+52|TUTORIAL|12|
+53|TUTORIAL|13|
+54|TUTORIAL|14|
+55|TUTORIAL|15|
+56|TUTORIAL|16|
+57|TUTORIAL|17|
+58|TUTORIAL|18|
+59|TUTORIAL|19|
+60|TUTORIAL|20|
+

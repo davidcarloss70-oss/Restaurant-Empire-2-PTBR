@@ -1,0 +1,35 @@
+22
+22
+[HELP]|1
+CCSTEP1|1
+RECIPEIN|3
+CUST4DLG|2
+OFFERFD|5
+SANDBOX|2
+BEVERIN|2
+CCCKSIN|4
+|0
+GMOPTIIN|2
+#
+1|[HELP]|1|Esta é uma mensagem de ajuda!
+2|CCSTEP1|1|Nome da receita
+3|RECIPEIN|1|Para preparar esta receita, você precisa colocar um %1s na cozinha.
+4|RECIPEIN|2|A cor verde significa que você já possui esta instalação. Se a cor for vermelha, certifique-se de colocar uma na sua cozinha!
+5|RECIPEIN|3|Prato premiado
+6|CUST4DLG|1|Selecione um Chef
+7|CUST4DLG|2|Clique com o botão esquerdo no retrato de um chef para ver informações detalhadas sobre esse chef. Clique duas vezes para selecionar o chef para interagir com o cliente.
+8|OFFERFD|1|Ofereça comida favorita ao cliente
+9|OFFERFD|2|O cliente já aceitou sua oferta!
+10|OFFERFD|3|Você não tem a receita que o cliente mais gosta.
+11|OFFERFD|4|Você não pode oferecer nada ao cliente - você não tem chefs em seu restaurante!
+12|OFFERFD|5|O cliente rejeita qualquer receita que você possa oferecer.
+13|SANDBOX|1|Clique com o botão esquerdo na caixa de seleção para incluir %1s em seu novo jogo.
+14|SANDBOX|2|Clique com o botão esquerdo na caixa de seleção para excluir %1s do seu novo jogo.
+15|BEVERIN|1|%1s Caixa de seleção
+16|BEVERIN|2|Clique com o botão esquerdo na caixa de seleção para incluir %1s no seu menu de bebidas.
+17|CCCKSIN|1|RODADA %1d
+18|CCCKSIN|2|Indica a rodada atual em andamento.
+19|CCCKSIN|3|Cozinha e tipo de curso
+20|CCCKSIN|4|Indica o tipo de cozinha e curso a ser avaliado nesta rodada. Para esta rodada, está definido como %1s.
+21|GMOPTIIN|1|Alternar animação de página
+22|GMOPTIIN|2|Clique com o botão esquerdo para ativar ou desativar a animação de virada de página do seu menu de comida. Atualmente está definido como %1j{sobre|desligado}.

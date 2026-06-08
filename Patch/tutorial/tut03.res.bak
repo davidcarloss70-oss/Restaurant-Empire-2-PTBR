@@ -1,0 +1,159 @@
+[MESSAGE]You have added decoration and placed recipes on the menu, but who's going to take the orders? Who's going to prepare the recipes? Who's going to make sure that customers pay up?
+
+No man is an island. If you ever think about expanding and opening more restaurants, you'll need more manpower! So let's see how we can hire staff to assist you in your epicurean exploits. Let's look into this now. The first thing is to locate the _Staff panel_ button. _Left-click_ on it now.
+[POSITION]475,32
+[DIMENSION]310,250
+[HINT]250,560,287,596
+
+[MESSAGE]Apart from your name, the staff list is almost completely bare. That's understandable - you haven't hired anyone to work for you yet!
+
+There is a column of buttons near the middle-right of the staff list interface. They are, from top to bottom, the _Switch to List Mode_, _Hire Staff_, _Raise/Lower Salary_, _Transfer Staff_ and _Fire Staff_ buttons. For now, let's concentrate on the Hire Staff button. _Left-click_ on it now.
+[POSITION]180,340
+[DIMENSION]600,400
+[HINT]170,202,204,330
+
+[MESSAGE]Notice how the interface now displays quite a bit of information! Let's break this information down into digestible chunks, shall we?
+
+Let's start from the top of the interface and work our way down. Notice the two round buttons on the top of the interface? One depicts a chef and another depicts a waiter. These are to switch between the _Chef Panel_ and _Waitstaff Panel_.
+
+If you _left-click_ on the _Waitstaff Panel_ button you will see that the displayed information changes to show relevant staff information.
+[POSITION]180,340
+[DIMENSION]600,400
+[HINT]130,49,190,78
+
+[MESSAGE]Any restaurant needs at least a _Chef_ to prepare the recipes, a _Captain_ for taking orders, a _Server_ to, well, serve the food, and a _Receptionist_ to show the customers to their seats. Oh, and I almost forgot: You need to hire a _Kitchen Porter_ to wash the dishes!
+
+Go ahead and hire all these posts. No need to hire a chef when you've got your trusting self to work the kitchen!
+
+Once you are done hiring, _left-click_ on the _Next_ button to continue.
+[POSITION]180,340
+[DIMENSION]600,400
+[HINT]130,49,160,78
+
+[MESSAGE]A word on Receptionists: they can only carry out their duties effectively if they have a _Reception Desk_ handy. You can find a _Reception Desk_ in the _Interior Panel_. You remember how to place items to equip and decorate your restaurant, right?
+
+Now place a _Reception Desk_ near the entrance of your restaurant.  We will continue with training afterwards.
+[POSITION]475,32
+[DIMENSION]310,250
+[HINT]
+
+[MESSAGE]This is also the ideal time to explain to you how to rotate, move and delete items. Notice the two round buttons near the end of the _interior interface_? They are the _Adjust Items_ and _Delete Items_ buttons. If you want to _Adjust_ an item, simply _left-click_ on the _Adjust Items_ button. You will notice that the cursor changes to reflect this. Then, _left-click_ on the item you want to adjust, and move it to where you want it to reside. If you want to _rotate_ an item, _left-click_ and _hold down_ the mouse button while you rotate the mouse. You will see the item rotate as well.
+
+_Left-click_ on the _Next_ button to continue.
+[POSITION]475,32
+[DIMENSION]310,250
+[HINT]
+
+[MESSAGE]To _Delete_ an item, _left-click_ on the _Delete Item_ button, then _double-click_ on the item you want to remove from your restaurant's premises.
+
+_Left-click_ on the _Next_ button to continue.
+[POSITION]475,32
+[DIMENSION]310,250
+[HINT]
+
+[MESSAGE]Good! Now let's go back to the _Staff Panel_, and see what some of the other buttons do.
+[POSITION]475,32
+[DIMENSION]310,250
+[HINT]
+
+[MESSAGE]Let's start with the _List Mode_ button. The list mode shows a list of all your employees. Here you can quickly glance at your roster of hired personnel, and can also rapidly pick out any missing staff positions so as to make your hiring process easier.
+[POSITION]180,340
+[DIMENSION]600,400
+[HINT]173,203,200,229
+
+[MESSAGE]Notice the two small icons to the right of each employee position, complete with rating bars right next each employee's name. The medal icon represents a chef's reputation or staff's skill level, and the flag icon represents employee morale. Here you can quickly see who is low on morale or reputation. If you _left-click_ on any one of these names, you will go back to the detailed view. Come on - let's try that now. _Left-click_ on the person you hired as kitchen porter.
+[POSITION]180,340
+[DIMENSION]600,400
+[HINT]118,110,154,129
+
+[MESSAGE]Now you're back in the detailed view. Most of the buttons are now available. You should already be familiar with the first two buttons.
+
+The other buttons are _Raise/Lower Salary_, _Transfer Staff_, and _Fire Staff_.
+
+These buttons are relatively easy to understand; I'll let you play with these at your leisure.
+
+When you are done familiarizing yourself with these buttons, _left-click_ on the _Next_ button to continue.
+[POSITION]180,340
+[DIMENSION]600,400
+[HINT]170,202,204,330
+
+[MESSAGE]Good going! You are just about ready to start taking orders in your first restaurant!
+
+To open your newly-equipped restaurant, _left-click_ on the _Open/Close Restaurant_ button to begin your fledgling career as a restaurateur!
+[POSITION]475,32
+[DIMENSION]310,250
+[HINT]170,202,204,330
+
+[MESSAGE]Now just be patient and customers are bound to come in...
+
+If you are impatient, you can always accelerate the game's speed by _left-clicking_ on one of the four _Speed_ bars to increase or decrease the game speed. Go ahead - try it now.
+
+When you are done experimenting with the speed settings, _left-click_ on the _Next_ button to continue.
+[POSITION]20,28
+[DIMENSION]765,250
+[HINT]418,569,483,592
+
+[MESSAGE]The round button to the left of the _Speed_ buttons is the _Pause/Resume Game_ toggle. _Left-click_ the button to first _Pause_,  then _left-click_ again to _Resume_ the game.
+[POSITION]475,32
+[DIMENSION]310,250
+[HINT]418,569,483,592
+
+[MESSAGE]There's something you should know about the speed settings and how time passes in the restaurant universe. In order to progress faster, a month's time is simulated based on your restaurant's performance at the end of the first day of each month.
+
+_Left-click_ on the _Next_ button to continue.
+[POSITION]475,32
+[DIMENSION]310,250
+[HINT]
+
+[MESSAGE]Now I'd like to explain to you about the _Information Center_ interface. This interface can help you better manage this, and all your forthcoming restaurants.
+
+Let's bring up the interface now, shall we? _Left-click_ on the _Information Center_ button.
+[POSITION]475,32
+[DIMENSION]310,250
+[HINT]58,561,96,597
+
+[MESSAGE]Looking at the column of buttons, we can see, from top to bottom: the _Report Management_, _Report List_, the _Report_ and the _Goal_ buttons. Most of the functions of the _Information Center_ are self-explanatory. The most important ones to know for now are the _Report_ and _Goal_ buttons, so let's take a closer look at their functions.
+
+To continue, _left-click_ on the _Report_ button.
+[POSITION]475,32
+[DIMENSION]310,250
+[HINT]105,133,144,364
+
+[MESSAGE]Now take a look at the top row of buttons. There are, from left to right, the _Restaurant Ratings_, _Sales Report_, _Statistics_, _Income Statements_, _Financial Graphs_ and _Complaints_ buttons. Click on each one and familiarize yourself with the different types of information displayed.
+
+_Left-click_ on the _Next_ button when you are ready to continue.
+[POSITION]40,407
+[DIMENSION]720,180
+[HINT]265,118,502,153
+
+[MESSAGE]Now go back to the _Restaurant Ratings_ button. This indicates how well your restaurant is faring in each rating category. The categories with pluses add points, while the minuses subtract points from your overall restaurant rating.
+
+_Left-click_ on the _Next_ button when you are ready to continue.
+[POSITION]203,410
+[DIMENSION]500,180
+[HINT]265,118,502,153
+
+[MESSAGE]Pay special attention to the _Environment_ and _Food_ category ratings. The higher your restaurant's value in these categories, the more likely customers will choose your restaurant. Provided, that is, you keep the _Price_ and _Complaints_ down! Do that, and you have a hit restaurant in your hands!
+[POSITION]203,410
+[DIMENSION]500,180
+[HINT]265,118,502,153
+
+[MESSAGE]When you're ready to move on, _left-click_ on the _Goal_ button to continue.
+[POSITION]203,480
+[DIMENSION]500,180
+[HINT]210,246,644,279
+
+[MESSAGE]As you can see, the top row of buttons now displays the _Game Score_ as well as your scenario _Goal_ buttons. Click on the _Goal_ button. Remember your goals? If you ever forget them, have a look here. You can see what they are and how close you are to meeting them.
+
+_Left-click_ on the _Goal_ button when you are ready to continue.
+[POSITION]203,410
+[DIMENSION]500,180
+[HINT]265,118,342,153
+
+[MESSAGE]Wow - all this restaurant managing has got me really hungry, Armand. But the good news is you now have all the requisite pieces to start operating your fully-functional restaurant! Maybe someday your restaurant will not only be packed with efficient staff, but happy customers as well!
+
+Now off you go - _remember, your goal is to reach 35 customers with a monthly revenue of $30,000 within three months._ Think you can manage it? I sure think you can! Good luck!
+[POSITION]350,354
+[DIMENSION]450,250
+[HINT]
+

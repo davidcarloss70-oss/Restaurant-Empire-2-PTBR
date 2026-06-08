@@ -10,11 +10,14 @@ Este repositório contém tanto os **arquivos prontos para instalar (Patch)** qu
 
 Se você quer apenas jogar o jogo em Português, siga estes passos simples:
 
-1. Baixe o conteúdo da pasta `Patch/` deste repositório.
-2. Navegue até a pasta de instalação do jogo na Steam:
-   - Geralmente fica em: `C:\Program Files (x86)\Steam\steamapps\common\Restaurant Empire 2\resource`
-3. Copie todos os arquivos da pasta `Patch/` e cole na pasta `resource` do jogo, **substituindo** os arquivos originais quando solicitado.
-   - *Nota: Os arquivos terminados em `.bak` que estão na pasta do patch são backups originais em inglês. Eles garantem que você possa reverter as alterações, se necessário, e também são usados pelos scripts para re-traduzir.*
+1. Baixe o arquivo **`RE2_PTBR_Patch.zip`** deste repositório.
+2. Na sua biblioteca da Steam, clique com o botão direito no **Restaurant Empire 2** → **Gerenciar** → **Explorar arquivos locais**. Isso abrirá a pasta raiz do jogo.
+3. **Extraia o conteúdo do ZIP** diretamente na pasta raiz do jogo, **substituindo** os arquivos quando solicitado.
+   - O ZIP contém **apenas os arquivos que foram realmente traduzidos**, organizados nas subpastas corretas:
+     - `resource/` → Menus, interface, dicas e créditos (`.txr`, `STD.SET`, `credits.res`, `help.res`)
+     - `tutorial/` → Textos dos 12 tutoriais interativos (`tut01.res` a `tut12.res`)
+     - `script/extracted/` → Diálogos completos da campanha (`extracted_script.res`)
+   - *Nota: Os arquivos `.bak` são backups originais em inglês para que você possa reverter, se necessário.*
 4. Abra o jogo e divirta-se!
 
 ---
@@ -35,7 +38,17 @@ Traduzir Restaurant Empire 2 foi um grande desafio de engenharia reversa devido 
 
 ### Como usar as Ferramentas
 
-Se o jogo for atualizado ou se você quiser modificar as traduções manualmente, você pode rodar as ferramentas Python localizadas em `Tools/`.
+Se o jogo for atualizado ou se você quiser modificar as traduções manualmente, você tem duas opções na pasta `Tools/`:
+
+#### Opção 1: Aplicativo Visual Gráfico (Recomendado)
+Desenvolvemos uma interface gráfica nativa para editar e aplicar as traduções!
+1. Se você já tem o executável `RE2_Tradutor_UI.exe` na pasta `Tools/`, basta abri-lo!
+2. Pelo aplicativo, você pode pesquisar por palavras, editar a tradução desejada e clicar em "Salvar".
+3. Com 1 clique no botão **Aplicar Patch!**, o programa executa todos os scripts pesados e traduz o jogo na hora.
+
+*(Se você não tiver o `.exe`, pode gerá-lo rodando `python build_exe.py` ou `uv run build_exe.py`)*
+
+#### Opção 2: Linha de Comando (Modo Antigo/Avançado)
 
 **Pré-requisitos:**
 - Ter o Python instalado.
