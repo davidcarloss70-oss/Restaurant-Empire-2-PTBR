@@ -54,6 +54,30 @@ def scripts_available():
     """Verifica se os scripts de tradução estão disponíveis na pasta do app."""
     return all(os.path.exists(os.path.join(BASE_DIR, s)) for s in SCRIPTS)
 
+def find_python():
+    """
+    Quando rodando como .exe compilado, sys.executable aponta para o .exe,
+    não para o Python real. Esta função busca o interpretador Python do sistema.
+    """
+    import shutil
+
+    # Se não for frozen (rodando como script .py normal), usa o próprio interpretador
+    if not getattr(sys, 'frozen', False):
+        return sys.executable
+
+    # Tenta encontrar python no PATH do sistema
+    for name in ("python", "python3", "py"):
+        p = shutil.which(name)
+        if p:
+            return p
+
+    # Tenta o uv que sabemos que está instalado
+    uv = shutil.which("uv")
+    if uv:
+        return uv  # será usado com args especiais abaixo
+
+    return None
+
 # ── stdout redirect ───────────────────────────────────────────────────────────
 
 class RedirectText(io.StringIO):
@@ -486,17 +510,36 @@ class App(ctk.CTk):
         old_stdout = sys.stdout
         sys.stdout = redir
         try:
+            python_exe = find_python()
+            if not python_exe:
+                redir.write("❌  Python não encontrado no sistema!\n")
+                redir.write("Instale o Python e certifique-se de que está no PATH.\n")
+                return
+
+            redir.write(f"🐍  Usando Python: {python_exe}\n")
+
             for script_name in SCRIPTS:
                 script_path = os.path.join(BASE_DIR, script_name)
                 redir.write(f"\n>> Executando {script_name}...\n")
+
+                # Se for o uv, usa 'uv run python script.py'
+                is_uv = os.path.basename(python_exe).lower().startswith("uv")
+                if is_uv:
+                    cmd = [python_exe, "run", "python", script_path]
+                else:
+                    cmd = [python_exe, script_path]
+
                 result = subprocess.run(
-                    [sys.executable, script_path],
-                    capture_output=True, text=True, cwd=BASE_DIR)
+                    cmd, capture_output=True, text=True,
+                    encoding="utf-8", errors="replace",
+                    cwd=BASE_DIR)
+
                 if result.stdout:
                     redir.write(result.stdout)
                 if result.returncode != 0:
-                    redir.write(f"\nERRO: {result.stderr}\n")
+                    redir.write(f"\n❌  ERRO em {script_name}:\n{result.stderr}\n")
                     return
+
             redir.write("\n✅  EDIÇÕES APLICADAS COM SUCESSO!\n")
         except Exception as e:
             redir.write(f"\n❌  ERRO: {e}\n")
