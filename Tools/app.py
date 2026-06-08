@@ -20,8 +20,9 @@ sys.path.insert(0, BASE_DIR)
 ctk.set_appearance_mode("Dark")
 ctk.set_default_color_theme("green")
 
-CONFIG_FILE = os.path.join(BASE_DIR, "app_config.json")
-CACHE_FILE  = os.path.join(BASE_DIR, "translation_cache.json")
+CONFIG_FILE       = os.path.join(BASE_DIR, "app_config.json")
+CACHE_FILE        = os.path.join(BASE_DIR, "translation_cache.json")
+CACHE_BACKUP_FILE = os.path.join(BASE_DIR, "translation_cache.backup.json")
 
 # Scripts que geram os arquivos binários a partir do cache
 SCRIPTS = ["translate_all_safe.py", "translate_std_set.py", "translate_tutorials.py"]
@@ -94,6 +95,7 @@ class App(ctk.CTk):
 
     def _build_ui(self):
         self.grid_rowconfigure(1, weight=1)
+        self.grid_rowconfigure(2, weight=0)   # footer row
         self.grid_columnconfigure(1, weight=1)
 
         # ── TOP BAR: game path ───────────────────────────────────────────────
@@ -145,6 +147,18 @@ class App(ctk.CTk):
         self._build_editor_view()
         self._build_patch_view()
         self._build_log_view()
+        self._build_footer()
+
+    def _build_footer(self):
+        footer = ctk.CTkFrame(self, corner_radius=0, fg_color=("gray85", "gray13"), height=28)
+        footer.grid(row=2, column=0, columnspan=2, sticky="ew")
+        footer.grid_columnconfigure(0, weight=1)
+        footer.grid_propagate(False)
+
+        ctk.CTkLabel(footer,
+            text="RE2 PT-BR Modding Tool  •  Tradução por davidcarloss  •  github.com/davidcarloss70-oss",
+            text_color="gray", font=ctk.CTkFont(size=11)).grid(
+            row=0, column=0, sticky="e", padx=15)
 
     def _sidebar_btn(self, parent, text, row, cmd):
         ctk.CTkButton(parent, text=text, anchor="w", command=cmd,
@@ -202,9 +216,18 @@ class App(ctk.CTk):
         ef.grid(row=4, column=0, sticky="ew", pady=(8, 0))
         ef.grid_columnconfigure(0, weight=1)
 
-        self.lbl_editing = ctk.CTkLabel(ef,
+        # linha de status/backup do cache
+        bak_row = ctk.CTkFrame(ef, fg_color="transparent")
+        bak_row.grid(row=0, column=0, sticky="ew", padx=10, pady=(8, 0))
+        bak_row.grid_columnconfigure(0, weight=1)
+
+        self.lbl_editing = ctk.CTkLabel(bak_row,
             text="Selecione um texto acima para editar", text_color="gray")
-        self.lbl_editing.grid(row=0, column=0, sticky="w", padx=10, pady=(8, 2))
+        self.lbl_editing.grid(row=0, column=0, sticky="w")
+
+        ctk.CTkButton(bak_row, text="🔄  Restaurar Cache Backup",
+                      width=190, fg_color="#7d3c98", hover_color="#6c3483",
+                      command=self.restore_cache_backup).grid(row=0, column=1, padx=(8, 0))
 
         self.txt_edit = ctk.CTkTextbox(ef, height=65)
         self.txt_edit.grid(row=1, column=0, sticky="ew", padx=10, pady=4)
@@ -400,12 +423,37 @@ class App(ctk.CTk):
         new_val = self.txt_edit.get("1.0", "end").strip()
         self.cache_data[self.selected_key] = new_val
         try:
+            # Backup automático antes de salvar
+            if os.path.exists(CACHE_FILE):
+                shutil.copy2(CACHE_FILE, CACHE_BACKUP_FILE)
+
             with open(CACHE_FILE, "w", encoding="utf-8") as f:
                 json.dump(self.cache_data, f, ensure_ascii=False, indent=2)
-            self.lbl_editing.configure(text="✅  Salvo no cache!", text_color="#28a745")
+            self.lbl_editing.configure(text="✅  Salvo no cache! (backup criado)", text_color="#28a745")
             self.render_list()
         except Exception as e:
             self.lbl_editing.configure(text=f"Erro ao salvar: {e}", text_color="red")
+
+    def restore_cache_backup(self):
+        if not os.path.exists(CACHE_BACKUP_FILE):
+            messagebox.showinfo("Sem backup",
+                "Nenhum backup de cache encontrado.\n"
+                "O backup é criado automaticamente ao salvar uma tradução.")
+            return
+        if not messagebox.askyesno("Restaurar Cache Backup",
+            "Isso vai restaurar o cache para a versão anterior à última edição salva.\n\n"
+            "Tem certeza?"):
+            return
+        try:
+            shutil.copy2(CACHE_BACKUP_FILE, CACHE_FILE)
+            with open(CACHE_FILE, "r", encoding="utf-8") as f:
+                self.cache_data = json.load(f)
+            self.filtered_keys = list(self.cache_data.keys())
+            self.render_list()
+            self.lbl_editing.configure(
+                text="✅  Cache restaurado para o backup!", text_color="#28a745")
+        except Exception as e:
+            messagebox.showerror("Erro", f"Falha ao restaurar backup: {e}")
 
     # ── Apply cache edits (runs Python scripts) ───────────────────────────────
 
