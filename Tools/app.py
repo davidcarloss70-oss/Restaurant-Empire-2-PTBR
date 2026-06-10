@@ -524,20 +524,22 @@ class App(ctk.CTk):
                 script_path = os.path.join(BASE_DIR, script_name)
                 redir.write(f"\n>> Executando {script_name}...\n")
 
-                cmd = [python_exe, script_path]
+                cmd = [python_exe, "-u", script_path]
 
                 flags = getattr(subprocess, 'CREATE_NO_WINDOW', 0x08000000) if os.name == 'nt' else 0
 
-                result = subprocess.run(
-                    cmd, capture_output=True, text=True,
-                    encoding="utf-8", errors="replace",
+                process = subprocess.Popen(
+                    cmd, stdout=subprocess.PIPE, stderr=subprocess.STDOUT,
+                    text=True, encoding="utf-8", errors="replace",
                     cwd=BASE_DIR,
                     creationflags=flags)
 
-                if result.stdout:
-                    redir.write(result.stdout)
-                if result.returncode != 0:
-                    redir.write(f"\n❌  ERRO em {script_name}:\n{result.stderr}\n")
+                for line in process.stdout:
+                    redir.write(line)
+
+                process.wait()
+                if process.returncode != 0:
+                    redir.write(f"\n❌  ERRO em {script_name} (Código {process.returncode})\n")
                     return
 
             redir.write("\n✅  EDIÇÕES APLICADAS COM SUCESSO!\n")
