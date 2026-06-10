@@ -143,17 +143,10 @@ class TranslationSession:
             return val if isinstance(val, str) else text
         if text.strip() in OVERRIDE_DICT:
             return OVERRIDE_DICT[text.strip()]
-        try:
-            time.sleep(0.05)
-            translated = self.translator.translate(text)
-            if isinstance(translated, str):
-                self.cache[text] = translated
-                return translated
-            else:
-                self.cache[text] = text
-                return text
-        except Exception as e:
-            return text
+        
+        # Modo Offline: se não está no cache, manter o original (em inglês)
+        # Isso evita que a aplicação demore horas tentando traduzir textos pela internet
+        return text
 
     def batch_translate(self, unique_texts):
         # Filters out texts already in cache or override dict
@@ -249,9 +242,36 @@ class TranslationSession:
                 word_placeholders[ph] = word
                 text = re.sub(pattern, ph, text)
                 
-        # 5. Get translation from cache (since pre-collected, it will be cached)
-        translated_text = self.translate_clean_text(text)
-        if not isinstance(translated_text, str):
+        # 5. Get translation from cache
+        # The cache keys use {V}, {F}, {C}, {W} without numbers!
+        cache_key = text
+        cache_key = re.sub(r'\{V\d+\}', '{V}', cache_key)
+        cache_key = re.sub(r'\{F\d+\}', '{F}', cache_key)
+        cache_key = re.sub(r'\{C\d+\}', '{C}', cache_key)
+        cache_key = re.sub(r'\{W\d+\}', '{W}', cache_key)
+        
+        translated_text = self.translate_clean_text(cache_key)
+        
+        if isinstance(translated_text, str) and translated_text != cache_key:
+            # We found it in the cache! But it has {V}, {F}, etc.
+            # We must restore the numbers so step 6 can replace them back!
+            v_count = 0
+            while "{V}" in translated_text:
+                translated_text = translated_text.replace("{V}", f"{{V{v_count}}}", 1)
+                v_count += 1
+            f_count = 0
+            while "{F}" in translated_text:
+                translated_text = translated_text.replace("{F}", f"{{F{f_count}}}", 1)
+                f_count += 1
+            c_count = 0
+            while "{C}" in translated_text:
+                translated_text = translated_text.replace("{C}", f"{{C{c_count}}}", 1)
+                c_count += 1
+            w_count = 0
+            while "{W}" in translated_text:
+                translated_text = translated_text.replace("{W}", f"{{W{w_count}}}", 1)
+                w_count += 1
+        else:
             translated_text = text
             
         # 6. Restore placeholders
