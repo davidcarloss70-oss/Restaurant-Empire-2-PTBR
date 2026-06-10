@@ -65,16 +65,18 @@ def find_python():
     if not getattr(sys, 'frozen', False):
         return sys.executable
 
-    # Tenta encontrar python no PATH do sistema
+    # Busca o executável do python mais comum no path
     for name in ("python", "python3", "py"):
         p = shutil.which(name)
         if p:
             return p
 
-    # Tenta o uv que sabemos que está instalado
-    uv = shutil.which("uv")
-    if uv:
-        return uv  # será usado com args especiais abaixo
+    # Fallback pro diretório AppData padrão do Windows se não estiver no PATH
+    local_app_data = os.environ.get('LOCALAPPDATA', '')
+    if local_app_data:
+        windows_apps = os.path.join(local_app_data, "Microsoft", "WindowsApps", "python.exe")
+        if os.path.exists(windows_apps):
+            return windows_apps
 
     return None
 
@@ -522,12 +524,7 @@ class App(ctk.CTk):
                 script_path = os.path.join(BASE_DIR, script_name)
                 redir.write(f"\n>> Executando {script_name}...\n")
 
-                # Se for o uv, usa 'uv run python script.py'
-                is_uv = os.path.basename(python_exe).lower().startswith("uv")
-                if is_uv:
-                    cmd = [python_exe, "run", "python", script_path]
-                else:
-                    cmd = [python_exe, script_path]
+                cmd = [python_exe, script_path]
 
                 result = subprocess.run(
                     cmd, capture_output=True, text=True,
