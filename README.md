@@ -2,6 +2,8 @@
 
 Bem-vindo ao repositório oficial da tradução completa para Português do Brasil do clássico **Restaurant Empire 2** (versão Steam). 
 
+🎮 **[Confira o Guia Oficial da Tradução na Steam clicando aqui!](https://steamcommunity.com/sharedfiles/filedetails/?id=3740389404)**
+
 Este repositório contém tanto os **arquivos prontos para instalar (Patch)** quanto as **ferramentas de engenharia reversa (Tools)** desenvolvidas para tornar essa tradução possível, caso a comunidade queira aprimorar ou traduzir para outros idiomas.
 
 ---
@@ -40,11 +42,12 @@ Traduzir Restaurant Empire 2 foi um grande desafio de engenharia reversa devido 
 
 Se o jogo for atualizado ou se você quiser modificar as traduções manualmente, você tem duas opções na pasta `Tools/`:
 
-#### Opção 1: Aplicativo Visual Gráfico (Recomendado)
-Desenvolvemos uma interface gráfica nativa para editar e aplicar as traduções!
+#### Opção 1: Aplicativo Visual Gráfico e Editor Offline (Recomendado)
+Desenvolvemos uma interface gráfica nativa para aplicar e até editar as traduções livremente!
 1. Se você já tem o executável `RE2_Tradutor_UI.exe` na pasta `Tools/`, basta abri-lo!
-2. Pelo aplicativo, você pode pesquisar por palavras, editar a tradução desejada e clicar em "Salvar".
-3. Com 1 clique no botão **Aplicar Patch!**, o programa executa todos os scripts pesados e traduz o jogo na hora.
+2. Pelo aplicativo, você pode pesquisar por palavras, editar a tradução desejada no **Cache de Tradução** e clicar em "Salvar".
+3. Com 1 clique no botão **Aplicar Edições no Jogo**, o programa executa todos os scripts pesados e atualiza o jogo na hora.
+   - **Nota (v1.0):** O aplicativo agora é **100% offline**, rodando os scripts diretamente pelo cache local (`translation_cache.json`) sem bater em nenhuma API do Google, o que garante que a aplicação das edições leve apenas 1 a 2 segundos em vez de horas! Ele também possui sistema de Backup para restauração.
 
 *(Se você não tiver o `.exe`, pode gerá-lo rodando `python build_exe.py` ou `uv run build_exe.py`)*
 
