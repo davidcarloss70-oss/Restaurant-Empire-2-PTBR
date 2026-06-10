@@ -526,10 +526,13 @@ class App(ctk.CTk):
 
                 cmd = [python_exe, script_path]
 
+                flags = getattr(subprocess, 'CREATE_NO_WINDOW', 0x08000000) if os.name == 'nt' else 0
+
                 result = subprocess.run(
                     cmd, capture_output=True, text=True,
                     encoding="utf-8", errors="replace",
-                    cwd=BASE_DIR)
+                    cwd=BASE_DIR,
+                    creationflags=flags)
 
                 if result.stdout:
                     redir.write(result.stdout)

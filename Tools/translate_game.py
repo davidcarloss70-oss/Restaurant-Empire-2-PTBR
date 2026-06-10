@@ -5,12 +5,22 @@ import shutil
 import time
 from deep_translator import GoogleTranslator
 
-# Path configurations
+# Tenta carregar o caminho do jogo do app_config.json
+app_config_path = "app_config.json"
 GAME_DIR = r"C:\Program Files (x86)\Steam\steamapps\common\Restaurant Empire 2"
+if os.path.exists(app_config_path):
+    try:
+        with open(app_config_path, "r", encoding="utf-8") as f:
+            cfg = json.load(f)
+            if cfg.get("game_path"):
+                GAME_DIR = cfg["game_path"]
+    except Exception as e:
+        print(f"Aviso: Não foi possível ler app_config.json: {e}")
+
 RESOURCE_DIR = os.path.join(GAME_DIR, "resource")
 SCRIPT_EXTRACTED_DIR = os.path.join(GAME_DIR, "script", "extracted")
 
-CACHE_FILE = r"translation_cache.json"
+CACHE_FILE = "translation_cache.json"
 
 # Override dictionary for months, days, and time units
 OVERRIDE_DICT = {

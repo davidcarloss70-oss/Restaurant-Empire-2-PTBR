@@ -3,8 +3,12 @@ import shutil
 import translate_game
 
 def translate_tutorials():
-    tutorial_dir = r"C:\Program Files (x86)\Steam\steamapps\common\Restaurant Empire 2\tutorial"
-    
+    print("=== Translating Tutorials ===")
+    tutorial_dir = os.path.join(translate_game.GAME_DIR, "tutorial")
+    if not os.path.exists(tutorial_dir):
+        print(f"Tutorial folder not found: {tutorial_dir}")
+        return
+        
     # Setup session
     session = translate_game.TranslationSession()
     
